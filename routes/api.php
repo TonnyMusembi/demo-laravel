@@ -15,7 +15,6 @@ use App\Http\Controllers\ProductController;
 |
 */
 Route::get('/generate-barcode', [ProductController::class, 'index'])->name('generate.barcode');
-
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
