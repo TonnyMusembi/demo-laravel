@@ -18,3 +18,4 @@ Route::get('/generate-barcode', [ProductController::class, 'index'])->name('gene
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
